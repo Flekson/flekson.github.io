@@ -1,19 +1,5 @@
 const http = require("http");
 const fs = require("fs");
-const {MongoClient} = require('mongodb');
-const MongoDBclient = new MongoClient('mongodb://Admin:Garazhi2019@127.0.0.1:21017/?authMechanism=DEFAULT')
-
-const connect = async () =>{
-    try {
-        await MongoDBclient.connect()
-        console.log("Подключиение к базе данных установленно")
-        await MongoDBclient.close()
-        console.log("Подключиение к базе данных закрыто")
-    } catch (e) {
-        console.log(e)
-    }
-}
-
 
   
 http.createServer(function(request, response){

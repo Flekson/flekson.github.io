@@ -34,6 +34,6 @@ http.createServer(function(request, response){
     });
 }).listen(3000, function(){
     console.log("Server started at 3000");
-    connect()
+    connect();
 });
 

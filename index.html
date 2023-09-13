@@ -1,23 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Заявки</title>
-<!-- Loading Bootstrap -->
-<link href="favicon.png" type="image/png" rel="icon" >
-<link href="bootstrap.min.css" rel="stylesheet">
-
-<!-- Loading Flat UI -->
-<link href="flat-ui.css" rel="stylesheet">
-
-<link href="style.css" rel="stylesheet">
-
-<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
-<!--[if lt IE 9]>
-  <script src="../../dist/js/vendor/html5shiv.js"></script>
-  <script src="../../dist/js/vendor/respond.min.js"></script>
-<![endif]-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT Заявки</title>
+  <link href="favicon.png" type="image/png" rel="icon" >
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="flat-ui.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 </head>
 <body>
   <div class="container">
@@ -26,19 +16,19 @@
       <legend>Контактная информация</legend>
           <div class="form-group">
             <label for="inputName">ФИО</label>
-            <input type="name" class="form-control" name="name" placeholder="Введите ФИО">
+            <input id="inputName" type="name" class="form-control" name="name" placeholder="Введите ФИО" autocomplete="off">
           </div>
           <div class="form-group">
             <label for="inputPhone">Номер телефона</label>
-            <input type="phone" class="form-control" name="phone" placeholder="Введите номер телефона">
+            <input id="inputPhone" type="phone" class="form-control" name="phone" placeholder="Введите номер телефона" autocomplete="off">
           </div>
       <legend>Проблема</legend>
         <div class="form-inline">
-          <div class="form-group">
-            <input type="arm" class="form-control" name="arm" placeholder="Номер ARM">
+          <div class="form-problem">
+            <input size="8" type="arm" class="form-control" name="arm" placeholder="Номер ARM">
           </div>
-          <div class="form-group">
-             <input type="table" class="form-control" name="table" placeholder="Номер стола">
+          <div class="form-problem">
+             <input size="8" type="table" class="form-control" name="table" placeholder="Номер стола">
           </div>
         </div>
         <textarea type="text" class="form-control" rows="3" id="task" placeholder="Опишите проблему"></textarea>

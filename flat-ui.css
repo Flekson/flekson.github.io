@@ -9,7 +9,7 @@
 @font-face {
   font-family: 'Lato';
   src: url("../fonts/lato/lato-bold.eot");
-  src: url("../fonts/lato/lato-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/lato-bold.woff") format("woff"), url("../fonts/lato/lato-bold.ttf") format("truetype"), url("../fonts/lato/lato-bold.svg#latobold") format("svg");
+  src: url("../fonts/lato/lato-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/lato-bold.svg#latobold") format("svg");
   font-weight: bold;
   font-style: normal;
 }
